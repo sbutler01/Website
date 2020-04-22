@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Portfolio Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="neuralnetworks-title">Neural Networks</div>
+
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">About</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          SUNIL BUTLER
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="two-column-wrapper">
+        <div class="profile-image-wrapper">
+          <img src="images/projects_details/neural_network_1.png" alt="">
+        </div>
+
+        <div class="profile-content-wrapper">
+          <h1>Story of my Neural Network</h1>
+          <p>The primary task required to complete my masters thesis was to build a neural network in R using the Anaconda environment. I was to create a type of feed-forward neural network (diagrammed on the left) based on the one constructed by <a href="papers/Barunik_Paper.pdf">Barunik and Malinska</a> to predict crude oil futures prices. In their paper, Barunik and Malinska demonstrate that their model, which fits a Nelson-Siegel curve to prices based on maturity and then uses a neural network to predict the model's parameters, consistently outperforms common time series models when tested against validation data.
+          </p>
+          <p>My advisor's idea was to construct a similar model fitting basis splines to the maturities curves instead of the Nelson-Siegel model. I constructed a neural network from scratch based on some source code in Matlab various descriptions online. After it was finished, I experimented with different constructions of both the neural network and the b-spline until I'd finally created something that consistently outperformed many other published neural networks.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="two-column-wrapper">
+        <div class="profile-image-wrapper">
+          <img src="images/projects_details/neural_network_2.png" alt="">
+        </div>
+
+        <div class="profile-content-wrapper">
+          <p>Crude oil futures prices are an interesting challenge as their prices change both with their purchase date and their maturity, meaning that the price acts as a time series in two different dimensions (shown on the left). This project was made additionally difficult by the 'black box' nature of a neural network. Essentially, a model constructed by a neural network is built using the computer's own internal logic rather than a cohesive logical structure assigned by a human, so performing diagnostics on the model if it doesn't work well is difficult. The best approach is to have an in-depth knowledge of the nature of the data you're attempting to model and the optimization method of the neural network, as this will allow for educated guesses and experimentation.
+          </p>
+          <p>My model in most cases successfully outperformed the original model and several other models we tested against. There were some cases where my model failed to outperform the original model, but I was able to figure out exactly why this happened and to create a system that in almost every case correctly predicted whether my model or the original model would be more effective.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

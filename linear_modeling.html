@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Portfolio Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="linearmodeling-title">Linear Modeling</div>
+
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">About</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          SUNIL BUTLER
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="two-column-wrapper">
+        <div class="profile-image-wrapper">
+          <img src="images/projects_details/image_linearmodeling_1.png" alt="">
+        </div>
+
+        <div class="profile-content-wrapper">
+          <h1>It's Okay to Have Outliers (Thanks to Me)</h1>
+          <p> My undergraduate thesis was an interesting challenge, as I had little prior statistical experience and was tasked with creating a statistical model. My advisor's idea involved a more theoretically rigorous approach to median regression than had been attempted before, the goal being to create a linear modeling method that was more robust to outliers. I created the model, extended it to data with any finite dimension and crafted a response to perfectly colinear data. In similar statistical methods, perfectly colinear data forced researchers to throw out data points entirely, whereas my method allowed substantial information to be preserved.
+          </p>
+          <p> After my method was finished, it was tested on a notoriously difficult climate data set. To the left is the residual plot resulting from multiple linear regression, and below is the residual plot for my method. Note that the difference in scaling of the y-axes somewhat exaggerates the superiority of my model (there was no way I knew of to remedy this in minitab). However, my model nonetheless clearly fit the bulk of the data more effectively and ignores the two visible outliers.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="two-column-wrapper">
+        <div class="profile-image-wrapper">
+          <img src="images/projects_details/image_linearmodeling_2.png" alt="">
+        </div>
+
+        <div class="profile-content-wrapper">
+          <p> The most significant challenge and possibly the most difficult decision of my career came late in the project. I had discovered that data with certain properties would cause my model to produce nonsensical results, so I made a specific exception for that type of data. This happened again and again until I was forced to ackowledge that there was some systematic issue with my model. I looked back through everything, and discovered that to justify a step in my model, I had used a type of matrix algebra with assumptions that, with the retroactive knowledge arising from having completed most of the project, were clearly flawed. So I was faced with a choice; complete my project (I was close enough to the end to continue with my patchwork approach) of fundamentally restructure my model one month before the deadline. I went back and restructured my entire model, and at the expense of sleep and my already unimpressive social life, managed to turn in a more cohesive and sustainable model.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

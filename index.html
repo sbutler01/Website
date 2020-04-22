@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Portfolio Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="main-title">Sunil Butler's Website</div>
+
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">About</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          SUNIL BUTLER
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/image_neuralnetwork.jpg)"></div>
+
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <a href="neural_network.html">
+                <img src="images/logos/neural_network.png" alt="">
+              </a>
+            </div>
+
+            <div class="subtitle">I designed and implemented a neural network approach to predicting crude oil futures prices.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/image_game_1.png)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <a href="video_game.html">
+                <img src="images/logos/video_game.png" alt="">
+              </a>
+            </div>
+
+            <div class="subtitle">I created a top down shooter and a multi-level platformer both from scratch.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/image_website.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <a href="my_website.html">
+                <img src="images/logos/this_website.png" alt="">
+              </a>
+            </div>
+
+            <div class="subtitle">Mind blown! My own website is on my resume. I made this in html and javascript.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/image_statisticalconsulting.png)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <a href="statistical_consulting.html">
+                <img src="images/logos/statistical_consulting.png" alt="">
+              </a>
+            </div>
+
+            <div class="subtitle">I've worked as a statistical consultant on, among other things, analysis of a large agricultural study.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/image_teaching.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <a href="teaching.html">
+                <img src="images/logos/teaching.png" alt="">
+              </a>
+            </div>
+
+            <div class="subtitle">I ran an online course on statistics for science majors and oversaw labs for two other courses.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/image_linearmodeling.png)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <a href="linear_modeling.html">
+                <img src="images/logos/linear_modeling.png" alt="">
+              </a>
+            </div>
+
+            <div class="subtitle">I designed a method of linear modeling inteded to be less susceptible to outliers.</div>
+          </div>
+        </div>
+
+        
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>
