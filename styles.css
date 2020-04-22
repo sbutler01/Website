@@ -11,6 +11,7 @@ body {
 
 .main-title {
   background: url(images/image_background_title.jpg);
+  background-size: 500px;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   font-weight: bold;
